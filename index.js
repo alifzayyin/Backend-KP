@@ -64,6 +64,7 @@ app.use('/api', communityRoutes);
 app.use('/api', newsRoutes);
 app.use('/api', galleryRoutes);
 app.use('/api', berandaRoutes);
+app.use('/uploads', express.static('uploads'));
 
 // Jalankan server
 const PORT = process.env.PORT || 5000;
